@@ -1,0 +1,42 @@
+<header class="site-header" data-header>
+  <div class="header-bar">
+    <a class="logo" href="index.html" aria-label="Lasting Change Wellness, home">
+      {{> logo}}
+      <span class="logo__type"><span class="logo__name">Lasting <em>Change</em></span><span class="logo__sub">Wellness</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="method.html"{{nav:method}} data-roll>The Method</a></li>
+        <li><a href="coaching.html"{{nav:coaching}} data-roll>Coaching</a></li>
+        <li><a href="collective.html"{{nav:collective}} data-roll>The Collective</a></li>
+        <li><a href="speaking.html"{{nav:speaking}} data-roll>Speaking</a></li>
+        <li><a href="about.html"{{nav:about}} data-roll>About</a></li>
+        <li><a href="experience.html"{{nav:experience}} data-roll>Experience</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--sm header-cta" href="contact.html#book">Book a free call {{> ic}}</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-btn>
+      <span data-menu-label>Menu</span><span class="menu-btn__icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" data-menu>
+  <nav aria-label="Mobile">
+    <ol class="menu__list">
+      <li><a href="index.html"{{nav:home}}>Home <span>01</span></a></li>
+      <li><a href="method.html"{{nav:method}}>The Method <span>02</span></a></li>
+      <li><a href="coaching.html"{{nav:coaching}}>Coaching <span>03</span></a></li>
+      <li><a href="collective.html"{{nav:collective}}>The Collective <span>04</span></a></li>
+      <li><a href="speaking.html"{{nav:speaking}}>Speaking <span>05</span></a></li>
+      <li><a href="about.html"{{nav:about}}>About <span>06</span></a></li>
+      <li><a href="experience.html"{{nav:experience}}>Experience <span>07</span></a></li>
+      <li><a href="resources.html"{{nav:resources}}>Resources <span>08</span></a></li>
+      <li><a href="contact.html"{{nav:contact}}>Contact <span>09</span></a></li>
+    </ol>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--mint btn--block" href="contact.html#book">Book a free Power Up call {{> ic}}</a>
+    <p class="label"><a href="mailto:{{site.email}}">{{site.email}}</a><span>Blue Bell, PA</span></p>
+  </div>
+</div>
